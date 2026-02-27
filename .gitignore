@@ -1,0 +1,31 @@
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Node/Python Environment
+# (Note: Specific ignores are handled in the sub-directories)
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
