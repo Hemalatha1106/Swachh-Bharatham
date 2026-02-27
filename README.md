@@ -109,6 +109,13 @@ Swachh Bharatham combines PWA design, IoT integration, AI, and gamification to c
 
 ## Project Structure
 
+This repository is organized into a clean structure where the frontend/backend sit at the root level, alongside the machine learning model.
+
+### 1. Root Directory (Frontend & Backend)
+The root directory contains the core web application:
+- **Frontend:** Next.js PWA with gamification, maps, QR code scanning, and user dashboards (setup via `package.json`).
+- **Backend:** FastAPI for AI image classification and Supabase integration for auth, real-time database, and XP tracking.
+
 ```
 /
 ├── app/
@@ -148,8 +155,14 @@ Swachh Bharatham combines PWA design, IoT integration, AI, and gamification to c
 ├── backend/
 │   ├── main.py                 # FastAPI application
 │   └── requirements.txt         # Python dependencies
+├── ml-model/                    # AI classification model and dataset scripts
 └── public/                      # Static assets
 ```
+
+### 2. ml-model Directory
+This directory contains the machine learning components for AI-assisted image classification:
+- **Model:** Pre-trained PyTorch ResNet18 model fine-tuned on the TrashNet dataset (~78.8% accuracy).
+- **Dataset Scripts:** Scripts for training, evaluating, and predicting waste categories.
 
 ## Database Schema
 
